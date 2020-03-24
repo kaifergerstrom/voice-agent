@@ -43,6 +43,7 @@ class Listener:
         Surface-level run function to start listener in threaded loop
         '''
         t1 = threading.Thread(target=self.__run_listener)
+        t1.daemon = True
         t1.start()
 
     def get_command(self):

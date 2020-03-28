@@ -3,7 +3,7 @@ import threading
 
 class Listener:
     
-    name = "Alexa"  # The name to trigger the listening
+    name = "My Mirror"  # The name to trigger the listening
     status = ""  # The current status of the listener
     command = ""  # The command sentence of the text
 

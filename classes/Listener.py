@@ -3,11 +3,11 @@ import threading
 
 class Listener:
     
-    name = "My Mirror"  # The name to trigger the listening
     status = ""  # The current status of the listener
     command = ""  # The command sentence of the text
 
-    def __init__(self):
+    def __init__(self, name):
+        self.name = name  # The name to trigger the listening
         self.r = sr.Recognizer()  # Create an object for the speech_recognition
     
     def __detect_voice(self, audio):
